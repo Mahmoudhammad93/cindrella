@@ -1,0 +1,395 @@
+/*-- Global */
+ul{
+    padding: 0;
+}
+
+.profile-user-img{
+    cursor: pointer;
+}
+
+.alert{
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.content-wrapper{
+    /* background-image: url(../image/logo.jpg); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+.td-barcode>div{
+    height: 100px !important;
+}
+
+.td-barcode>div div{
+    height: 100% !important;
+}
+
+.td-barcode span.code{
+    display: block;
+    width: 100%;
+    letter-spacing: 24px;
+    text-align: left;
+    position: relative;
+    top: -5px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 111, 152, 0.3);
+}
+
+.box-profile{
+    position: relative;
+}
+
+.box-profile .profile-edit{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    border: 1px solid #204d74;
+    color: #204d74;
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.box-profile:hover .profile-edit{
+    opacity: 1;
+}
+
+.box-profile .profile-edit:hover{
+    background-color: #204d74;
+    color: #fff;
+}
+
+.box.box-info{
+    box-shadow: 0 0 4px rgba(168, 168, 168, 0.658);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*.tab-content{*/
+/*    overflow: hidden;*/
+/*}*/
+
+.navbar-custom-menu{
+    display: flex;
+    align-items: center;
+}
+
+.main-footer i.fa-heart{
+    color: rgb(226, 34, 34);
+    animation: heart 1s linear infinite;
+}
+
+#AllProducts > div{
+    margin-top: 10px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0 0 4px #a09f9fc7;
+    padding: 10px;
+}
+
+.modal-content{
+    border-radius: 10px;
+}
+.content-header>.breadcrumb{
+    top: 25px;
+    right: 20px;
+}
+
+.content-header>h1 {
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(168, 168, 168, 0.658);
+    border-radius: 10px;
+}
+
+.small-box{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.user-panel>.image>img {
+    width: 100%;
+    max-width: 45px;
+    height: auto;
+    background-color: #f7f7f766;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--- Start Profile Tooltip ---*/
+
+table tbody tr.sup-tool td{
+    position: relative;
+}
+
+.tooltip-profile{
+    display: none;
+    width: 350px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 4px #ddd;
+    border-radius: 10px;
+    position: absolute;
+    right: 35%;
+    bottom: 42px;
+    z-index: 9999;
+}
+
+.tooltip-profile::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    transform: rotate(45deg);
+}
+
+.table-responsive{
+    overflow-x: visible;
+}
+
+.tooltip-profile .profile-img {
+    width: 35%;
+    height: 120px;
+    border-right: 1px solid #ddd;
+    padding: 5px;
+}
+
+.tooltip-profile .profile-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.tooltip-profile .profile-info{
+    width: 65%;
+    padding: 10px;
+    position: relative;
+}
+
+.tooltip-profile .profile-info h5,
+.tooltip-profile .profile-info p{
+    text-align: left;
+    margin: 0;
+}
+
+.tooltip-profile .profile-info h5{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tooltip-profile .profile-info .opt{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+/*--- /end profile tooltip ---*/
+
+/*---- Start Input File For Image ---*/
+
+input[name=image]{
+    display: none;
+}
+
+.label-file{
+    width: 25%;
+    height: 200px;
+    border: 1px solid #ddd;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.label-file img{
+    width: 100%;
+    height: 100%;
+}
+
+.label-file span{
+    position: absolute;
+    bottom: -50%;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(10, 10, 10, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.label-file span i{
+    font-size: 25px;
+    color: #fff;
+}
+
+.label-file:hover span{
+    bottom: 0;
+}
+
+.btn-lang{
+    color: #fff !important;
+    margin-right: 20px;
+}
+
+.login-page,
+.register-page{
+    background-image: url(../images/login-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login-box-body,
+.register-box-body{
+    box-shadow: 0 0 8px #d6d6d6;
+}
+
+/*--- /end input file for image ---*/
+
+@keyframes heart{
+    0%
+    {
+        transform: scale( .75 );
+    }
+    20%
+    {
+        transform: scale( 1 );
+    }
+    40%
+    {
+        transform: scale( .75 );
+    }
+    60%
+    {
+        transform: scale( 1 );
+    }
+    80%
+    {
+        transform: scale( .75 );
+    }
+    100%
+    {
+        transform: scale( .75 );
+    }
+}
+
+/*--- Start Empty Box ---*/
+
+.empty{
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 0 4px #6b6b6b75;
+    border-radius: 10px;
+    padding: 100px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.empty .image{
+    width: 150px;
+    height: 150x;
+}
+
+.empty .image img{
+    width: 100%;
+    height: 100%;
+    animation-iteration-count: 1;
+    animation: emptyImg .3s linear infinite;
+}
+
+@keyframes emptyImg {
+    0%{ transform: translate(2px) scale(1.001) }
+    25%{ transform: translate(0px) scale(1)}
+    50%{ transform: translate(2px) scale(1.001) }
+    75%{ transform: translate(0px) scale(1)}
+    100%{ transform: translate(2px) scale(1.001) }
+}
+
+.heart{
+    color: #f53434;
+    animation: heart 1s infinite linear;
+}
+
+@keyframes heart{
+    0%
+    {
+        transform: scale( .75 );
+    }
+    20%
+    {
+        transform: scale( 1 );
+    }
+    40%
+    {
+        transform: scale( .75 );
+    }
+    60%
+    {
+        transform: scale( 1 );
+    }
+    80%
+    {
+        transform: scale( .75 );
+    }
+    100%
+    {
+        transform: scale( .75 );
+    }
+}
+
+.empty p{
+    margin: 0;
+    font-weight: bold;
+}
+
+.empty .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.empty .text .text-img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.empty .text .text-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/*--- /end empty box ---*/

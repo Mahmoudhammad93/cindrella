@@ -1,0 +1,8 @@
+.row.invoice-info p {
+    text-align: right !important;
+}
+@media print{
+    .row.invoice-info p {
+        text-align: right !important;
+    }
+}
